@@ -6,7 +6,7 @@ edition = "2021"
 license-file = "LICENSE.txt"
 keywords = ["league of legends", "league", "riot games", "riot", "game information"]
 categories = ["api-bindings"]
-
+repository = "https://github.com/Riktam-Santra/aurilion"
 
 [dependencies]
 reqwest = { version = "0.11", features = ["blocking", "json"] }
