@@ -38,7 +38,7 @@ pub struct ChampionData {
 #[derive(Debug, Serialize, Deserialize, PartialEq, Clone)]
 pub struct Skin {
     pub id: String,
-    pub num: i32,
+    pub num: f32,
     pub name: String,
     pub chromas: bool,
 }
@@ -50,22 +50,22 @@ pub struct Spell {
     pub description: String,
     pub tooltip: String,
     pub leveltip: LevelTip,
-    pub maxrank: i32,
-    pub cooldown: Vec<i32>,
+    pub maxrank: f32,
+    pub cooldown: Vec<f32>,
     #[serde(rename = "cooldownBurn")]
     pub cooldown_burn: String,
-    pub cost: Vec<i32>,
+    pub cost: Vec<f32>,
     #[serde(rename = "costBurn")]
     pub cost_burn: String,
     pub datavalues: Value,
-    pub effect: Vec<Option<Vec<i32>>>,
+    pub effect: Vec<Option<Vec<f32>>>,
     #[serde(rename = "effectBurn")]
     pub effect_burn: Vec<Option<String>>,
     pub vars: Value,
     #[serde(rename = "costType")]
     pub cost_type: String,
     pub maxammo: String,
-    pub range: Vec<i32>,
+    pub range: Vec<f32>,
     #[serde(rename = "rangeBurn")]
     pub range_burn: String,
     pub image: Image,

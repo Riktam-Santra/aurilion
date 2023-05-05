@@ -17,7 +17,7 @@ async fn getting_all_champions() {
 
 #[tokio::test]
 async fn getting_one_champion() {
-    let result = get_single_champion(String::from("13.9.1"), String::from("Ahri"))
+    let result = get_single_champion(String::from("Yasuo"), String::from("13.9.1"))
         .await
         .unwrap();
     println!("{:#?}", result);

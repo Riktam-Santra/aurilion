@@ -36,6 +36,7 @@ pub async fn get_single_champion(
         "http://ddragon.leagueoflegends.com/cdn/{}/data/en_US/champion/{}.json",
         version, name
     );
+    println!("{}", url);
     match reqwest::get(url).await {
         Ok(response) => {
             let response_text = response.text().await.unwrap();

@@ -19,14 +19,14 @@ pub struct Basic {
     pub colloq: String,
     pub plaintext: String,
     pub consumed: bool,
-    pub stacks: i32,
-    pub depth: i32,
+    pub stacks: f32,
+    pub depth: f32,
     #[serde(rename = "consumeOnFull")]
     pub consume_on_full: bool,
     pub from: Value,
     pub into: Value,
     #[serde(rename = "specialRecipe")]
-    pub special_recipe: i32,
+    pub special_recipe: f32,
     #[serde(rename = "inStore")]
     pub in_store: bool,
     #[serde(rename = "hideFromAll")]
