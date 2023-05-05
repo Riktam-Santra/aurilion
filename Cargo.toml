@@ -4,7 +4,7 @@ description = "A library to help facilitate easier interaction with Riot Games D
 version = "0.1.0"
 edition = "2021"
 license-file = "LICENSE.txt"
-keywords = ["league of legends", "league", "riot games", "riot", "game information"]
+keywords = ["leagueoflegends", "league", "riotgames", "riot", "gameinformation"]
 categories = ["api-bindings"]
 repository = "https://github.com/Riktam-Santra/aurilion"
 
