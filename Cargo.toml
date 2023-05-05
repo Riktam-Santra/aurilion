@@ -1,0 +1,16 @@
+[package]
+name = "aurilion"
+description = "A library to help facilitate easier interaction with Riot Games Data Dragon Web API for League of Legends in game items and champions."
+version = "0.1.0"
+edition = "2021"
+license-file = "LICENSE.txt"
+keywords = ["league of legends", "league", "riot games", "riot", "game information"]
+categories = ["api-bindings"]
+
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+tokio = { version = "1", features = ["full"] }
+serde_json = "1"
+
+serde = { version = "1", features = ["derive"] }
